@@ -8,10 +8,9 @@ typedef struct
    u_int32_t pid;
    char *interface_name;
    char *instruction;
-   char *arguments; // esta pensado como un solo string con los argumentos separados por espacios (si es que hay mas de uno)
+   char *arguments; // esta pensado como un solo string con los argumentos separados por espacios (si es que hay más de uno)
 } t_io_request;
 
-// Ver si es necesario meter el PID para la response
 typedef enum
 {
    INVALID_INSTRUCTION,

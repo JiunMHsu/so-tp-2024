@@ -14,10 +14,6 @@ t_registers crear_registros()
    registros.EBX = 0;
    registros.SI = 0;
    registros.DI = 0;
+
    return registros;
 }
-
-// void destruir_registers_generales(t_registers_generales *registros)
-// {
-//    free(registros);
-// }

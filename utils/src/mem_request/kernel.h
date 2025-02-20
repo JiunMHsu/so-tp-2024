@@ -2,6 +2,7 @@
 #define UTILS_MEM_REQUEST_KERNEL_H
 
 #include <protocol/protocol.h>
+
 #include "mem_response.h"
 
 typedef enum

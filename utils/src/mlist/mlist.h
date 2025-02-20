@@ -2,8 +2,8 @@
 #define UTILS_MLIST_H
 
 #include <stdlib.h>
-#include <commons/collections/list.h>
 #include <pthread.h>
+#include <commons/collections/list.h>
 
 typedef struct
 {

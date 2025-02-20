@@ -27,11 +27,7 @@ int8_t esperar_cliente(int32_t fd_escucha, void *(*atender_cliente)(void *))
    pthread_t thread;
 
    int32_t *fd_conexion_ptr = malloc(sizeof(int32_t));
-
    *fd_conexion_ptr = accept(fd_escucha, NULL, NULL);
-
-   // if (*fd_conexion_ptr == -1)
-   //    return -1;
 
    pthread_create(&thread, NULL, atender_cliente, fd_conexion_ptr);
    pthread_detach(thread);
@@ -73,7 +69,9 @@ int32_t crear_conexion(char *ip, char *puerto)
       return -1;
    }
 
-   int32_t socket_cliente = socket(server_info->ai_family, server_info->ai_socktype, server_info->ai_protocol);
+   int32_t socket_cliente = socket(server_info->ai_family,
+                                   server_info->ai_socktype,
+                                   server_info->ai_protocol);
    if (socket_cliente == -1)
    {
       perror("Error al crear el socket");

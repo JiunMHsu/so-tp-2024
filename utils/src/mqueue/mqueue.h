@@ -2,8 +2,8 @@
 #define UTILS_MQUEUE_H
 
 #include <stdlib.h>
-#include <commons/collections/queue.h>
 #include <pthread.h>
+#include <commons/collections/queue.h>
 
 typedef struct
 {

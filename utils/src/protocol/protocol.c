@@ -114,8 +114,6 @@ t_list *recibir_paquete(int32_t fd_conexion)
 
    buffer = recibir_buffer(&buffer_size, fd_conexion);
 
-   // printf("tamanio buffer %d\n", buffer_size);
-
    while (offset < buffer_size)
    {
       memcpy(&tamanio, buffer + offset, sizeof(int32_t));

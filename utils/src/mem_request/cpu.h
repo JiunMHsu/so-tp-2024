@@ -1,8 +1,6 @@
 #ifndef UTILS_MEM_REQUEST_CPU_H
 #define UTILS_MEM_REQUEST_CPU_H
 
-#include <stdlib.h>
-#include <commons/string.h>
 #include <protocol/protocol.h>
 #include <extended/string.h>
 

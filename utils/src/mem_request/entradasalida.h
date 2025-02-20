@@ -1,7 +1,6 @@
 #ifndef UTILS_MEM_REQUEST_ENTRADASALIDA_H
 #define UTILS_MEM_REQUEST_ENTRADASALIDA_H
 
-#include <stdlib.h>
 #include <protocol/protocol.h>
 #include <extended/string.h>
 

@@ -6,7 +6,6 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/socket.h>
-
 #include <commons/collections/list.h>
 
 typedef enum

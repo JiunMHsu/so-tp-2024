@@ -2,8 +2,6 @@
 #define UTILS_PROTOCOL_REGISTERS_H
 
 #include <stdlib.h>
-#include <string.h>
-#include <stddef.h> // para el size_t, si despues no lo usamos lo sacamos
 
 typedef struct
 {
@@ -20,11 +18,6 @@ typedef struct
 
 } t_registers;
 
-
-// Los argumentos de las funciones me los autocompleto copilot
-// habria q revisar
-
-// como registros a secas o como puntero?
 t_registers crear_registros();
 
 #endif // UTILS_PROTOCOL_REGISTROS_H

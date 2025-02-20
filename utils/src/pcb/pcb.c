@@ -25,7 +25,6 @@ void destruir_pcb(t_pcb *pcb)
    free(pcb->resource);
    destruir_io_request(pcb->io_request);
    free(pcb);
-   // pcb = NULL;
 }
 
 t_packet *serializar_pcb(t_pcb *pcb)
@@ -76,6 +75,7 @@ t_pcb *recibir_pcb(int32_t fd_conexion)
    t_list *paquete = recibir_paquete(fd_conexion);
    if (paquete == NULL)
       return NULL;
+
    t_pcb *pcb = malloc(sizeof(t_pcb));
 
    pcb->pid = *(u_int32_t *)list_get(paquete, 0);

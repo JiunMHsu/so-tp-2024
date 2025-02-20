@@ -167,7 +167,9 @@ void *mlist_remove_by_condition(t_mutext_list *lista_mutex, int32_t (*condicion)
    return elemento;
 }
 
-void mlist_remove_and_destroy_by_condition(t_mutext_list *lista_mutex, int32_t (*condicion)(void *), void (*destructor)(void *))
+void mlist_remove_and_destroy_by_condition(t_mutext_list *lista_mutex,
+                                           int32_t (*condicion)(void *),
+                                           void (*destructor)(void *))
 {
    pthread_mutex_lock(&(lista_mutex->mutex));
    void *elemento = list_remove_by_condition(lista_mutex->list, (void *)condicion);

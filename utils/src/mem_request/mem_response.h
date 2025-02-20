@@ -1,7 +1,6 @@
 #ifndef UTILS_MEM_REQUEST_RESPONSE_H
 #define UTILS_MEM_REQUEST_RESPONSE_H
 
-#include <stdlib.h>
 #include <protocol/protocol.h>
 
 typedef enum
